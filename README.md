@@ -17,11 +17,11 @@
 ## 📝 API 명세서
 | 기능 | Method | URL | Request | Response | 상태 코드 |
 |:---|:---|:---|:---|:---|:---|
-| 일정 등록 | POST | http://localhost:8080/api/schedules |  |  | 200(성공 상태) |
-| 일정 조회 | GET | http://localhost:8080/api/schedules/id |  |  | 200(성공 상태) |
-| 일정 목록 조회 | GET | http://localhost:8080/api/schedules?editing_date=date&writer=name |  |  | 200(성공 상태) |
-| 일정 수정 | PUT | http://localhost:8080/api/schedules/id | password |  | 200(성공 상태) |
-| 일정 삭제 | DELETE | http://localhost:8080/api/schedules/id | password |  | 200(성공 상태) |
+| 일정 등록 | POST | http://localhost:8080/api/schedules |  | ID, Writer, Contents, Posting_date, Editing_date | 200(성공 상태) |
+| 일정 조회 | GET | http://localhost:8080/api/schedules/id |  | ID, Writer, Contents, Posting_date, Editing_date  | 200(성공 상태) |
+| 일정 목록 조회 | GET | http://localhost:8080/api/schedules?editing_date=date&writer=name |  | [ID, Writer, Contents, Posting_date, Editing_date]...[]  | 200(성공 상태) |
+| 일정 수정 | PUT | http://localhost:8080/api/schedules/id | password | id | 200(성공 상태) |
+| 일정 삭제 | DELETE | http://localhost:8080/api/schedules/id | password | id | 200(성공 상태) |
 
 ---
 <br></br>
